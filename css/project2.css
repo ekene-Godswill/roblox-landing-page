@@ -1,0 +1,346 @@
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image:url(../images/back.jpg);
+}
+section > div:first-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px ; 
+    position: relative;
+    width: 100%;
+}
+section > div:first-of-type > button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 9px; 
+    font-size: 20px;
+}
+section > div:hover:first-of-type > button{
+    cursor: pointer;
+}
+
+.form{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    border: 0px solid white;
+    background-color: #232527;
+    width: 550px;
+    border-radius: 10px;
+    margin-top: 35px;
+    padding:  25px;
+}
+.form > div:first-of-type{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+}
+.form > div:nth-child(2){
+   margin-top: 30px;
+
+}
+.form > div:nth-child(2)> label{
+    color: white;
+}
+.form > div > label{
+    display: block;
+    margin-bottom: 6px;
+    color: white;
+}
+.form > div:nth-child(2) > div{
+    display: flex;
+    margin-top: 9px;
+    
+}
+.form > div:nth-child(2) > div > div{
+    flex:1;
+    display: flex;
+    margin-bottom: 30px;
+}
+.form > div:nth-child(2) > div > div > select{
+    width:100%;
+    padding: 10px 20px;
+    background-color: black;
+    color:#c2c3c3;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+.first{
+    border-radius: 8px 0 0 8px;
+
+}
+.third{
+    border-radius:0 8px 8px 0 ;
+}
+
+.form > div:nth-child(2) >div > div > select > option{
+    background-color: #232527;
+    font-size: 20px;
+    
+}
+.form > div:nth-child(3) > input{
+    padding: 10px 20px;
+    width: 500px;
+    border-radius: 8px;
+    background-color:#0a0b0c;
+    font-size: 19px;
+    margin-bottom: 30px;
+    outline:none;
+    color:#eee;
+    border:1px solid #707070;
+}
+.form > div:nth-child(4) > input{
+    padding: 10px 20px;
+    width: 500px;
+    border-radius: 8px;
+    background-color:#0a0b0c;
+    color:#eee;
+    font-size: 19px;
+    margin-bottom: 30px;
+    outline:none;
+    border:1px solid #707070;
+}
+
+.gender-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.gender-div > button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    background-color:#0a0b0c;
+    border:1px solid #707070;
+    outline:none;
+    margin-bottom: 30px;
+}
+
+.gender-div > button > span{
+    width:30px;
+    height: 30px;
+    background-size: 60px 30px;
+    background-position: 0;
+    
+    background-repeat: no-repeat;
+}
+
+.gender-div > button:first-child{
+    border-radius: 6px 0 0 6px;
+    border-right: none;
+}
+.gender-div > button:first-child > span{
+    background-image: url(../images/male.png);
+}
+
+.gender-div > button:last-child{
+    border-radius: 0 6px 6px 0;  
+}
+.gender-div > button:last-child > span{
+    background-image: url(../images/female.png);
+}
+
+.form > div:nth-child(6){
+    font-size: 17px;
+    color: white;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-bottom: 30px;
+
+}
+.form > div:nth-child(6) > a{
+    color: #1d9bf0;
+    text-decoration: underline;
+}
+.form > div:hover:nth-child(6) > a{
+    cursor: pointer;
+}
+.form > div:nth-child(7){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.form > div:nth-child(7) > button{
+    width: 500px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #919293;
+    color: #37393b;
+    font-size: 19px;
+    font-weight: 600;
+}
+ .last{
+    width: 100%;
+    margin-bottom: 30px;
+ }
+   
+    
+
+.last > div:first-of-type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 18px; 
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.4em;
+
+}
+.last > div:last-of-type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+     
+}
+.last > div:last-of-type > img{
+    width: 200px;
+}
+.last > div:last-of-type > img:nth-child(1){
+    width: 180px;
+}
+.last > div:last-of-type > img:nth-child(4){
+    width: 170px;
+    border: 1px solid #9f9e9e;
+}
+.last > div:last-of-type > img:nth-child(5){
+    width: 160px;
+    
+}
+.last > div:hover:last-of-type > img{
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: #232527;
+    color:#bdbebe;
+    padding: 12px;
+    width: 100%;
+}
+.foot{
+    max-width: 970px;
+    margin: 0 auto;
+    align-items: center;
+}
+.foot > div:first-of-type{
+    margin-top: 20px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+.foot > div:first-of-type > a:hover{
+    cursor: pointer;
+    color: white;
+}
+.foot > div:last-of-type{
+    display: flex;
+    gap:25px ;
+   border-top:1px solid #656668;
+   
+}
+/* .foot > div:last-of-type > button{
+    display: flex;
+    width: 350px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    background-color: #232527;
+    color:white;
+    border: 1px solid white; 
+    gap: 10px;
+    border-radius: 8px;
+}
+.foot > div:last-of-type > button:hover{
+    cursor: pointer;
+}
+
+.foot > div:last-of-type > button > i{
+    margin-top: 5px;
+    
+}
+.foot > div:last-of-type > button > i:last-of-type{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.foot > div:last-of-type > button > span{
+    font-size: 18px;
+    font-weight: 600;
+} */
+.foot > div:last-of-type > div{
+    font-size: 12px;
+    margin-top: 30px;
+    color:#bdbebe;
+}
+
+.lang-div{
+    border:1px solid #bdbebe;
+    width:300px;
+    position: relative;
+    border-radius: 3px;
+    
+}
+.lang-div > div {
+    padding:10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.lang-div > div > span:nth-child(2){
+    font-size: 18px;
+    font-weight: 600;
+    color: #bdbebe; 
+}
+.lang-div > div > span:last-of-type{
+    margin-left:auto;
+}
+.lang-div > div:hover > span{
+    cursor: pointer;
+    color: white !important;
+    
+} 
+.lang-div > ul{
+    position: absolute;
+    bottom:34px;
+    max-height:300px;
+    display: none;
+    flex-direction: column;
+    width:250px;
+    overflow:auto;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    background-color: #393b3d;
+}
+.lang-div > ul > li{
+    padding:15px 10px;
+    font-size:18px;
+    color:#bdbebe;   
+}
+.lang-div > ul > li:hover{
+    background-color: #656668;
+    color:#0a0b0c;
+    cursor: pointer;
+}
+.open-lang{
+    display: flex !important;
+}
